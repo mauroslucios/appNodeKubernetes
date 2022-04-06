@@ -5,9 +5,24 @@
 - k3d cluster create mycluster --no-lb
 - k3d cluster list
 - k3d cluster delete
-- k3d
-
-
+- k3d clutser create mycluster --servers 3 --agents 3 servers control-plane agents nodes
+- kubectl get nodes
+- docker container ls
+- kubectl api-resources | grep pod
+- kubectl create -f pod.yaml
+- watch 'kubectl get pods'
+- kubectl describe pod/mypod
+- kubectl port-forward pod/mypod
+- kubectl delete pod mypod
+- kubectl api-resources | grep ReplicaSet
+- kubectl apply -f replicaste.yaml
+- kubectl get replicaset
+- kubectl scale replicaset myreplicaset --replicas 10
+- kubectl apply -f deployment.yaml
+- kubectl get pods
+- kubectl set image deployment mydeployment web=newimage
+- kubectl rollout history deployment mydeployment
+- kubectl rollout undo deployment mydeployment
 
 ### Pods da aplicação
 ```
