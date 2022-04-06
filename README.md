@@ -1,6 +1,9 @@
 # appNodeKubernetes
 
 ### Comandos
+- npm update
+- docker build -t mauroslucios/nodekubernetes:v1
+- docker run --name nodekubernetes -p 3003:3003 mauroslucios/nodekubernetes:v1
 - k3d cluster create mycluster
 - k3d cluster create mycluster --no-lb
 - k3d cluster list
