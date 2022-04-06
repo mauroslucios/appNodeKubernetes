@@ -89,3 +89,19 @@ spec:
         ports:
         - containerPort: 3003
 ```
+
+### Service da aplicação
+```
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: web
+spec:
+  selector:
+    app: web
+  ports:
+    - protocol: TCP
+      port: 3003
+      nodePort: 30000
+  type: NodePort
+  ``` 
