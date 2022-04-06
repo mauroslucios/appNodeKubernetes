@@ -10,6 +10,7 @@
 
 
 ### Pods da aplicação
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -20,8 +21,10 @@ spec:
       image: mauroslucios/nodekubernetes:v1
       ports:
         - containerPort: 3003
+```
 
 ### Replicaset da aplicação
+```
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -40,7 +43,10 @@ spec:
           image: mauroslucios/nodekubernetes:v1
           ports:
             - containerPort: 3003
+``` 
+
 ### Deployment da aplicação
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -64,3 +70,4 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 3003
+```
